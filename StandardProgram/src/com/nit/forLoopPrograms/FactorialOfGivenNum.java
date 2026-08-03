@@ -13,7 +13,7 @@ public class FactorialOfGivenNum {
 		long factorial = 1;
 		for (int i = num; i >= 1; i--) {
 
-			factorial *= i;
+			factorial = factorial * i;
 		}
 		System.out.println("Factorial of num is :" + factorial);
 

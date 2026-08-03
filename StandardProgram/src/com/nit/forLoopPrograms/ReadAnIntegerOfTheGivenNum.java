@@ -12,8 +12,7 @@ public class ReadAnIntegerOfTheGivenNum {
 		int sum = 0;
 
 		for (int i = 1; i <= num; i++) {
-			// if i divis n, then only add i to sum.
-			// agar i ne n ko 
+
 			if (num % i == 0) {
 
 				sum = sum + i;
