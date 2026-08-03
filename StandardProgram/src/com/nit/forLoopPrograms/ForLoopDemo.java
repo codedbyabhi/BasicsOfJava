@@ -1,4 +1,4 @@
-package com.nit.basicsofjava;
+package com.nit.forLoopPrograms;
 
 public class ForLoopDemo {
 	
@@ -7,8 +7,6 @@ public class ForLoopDemo {
 		for(int i = 1; i<10 ;System.out.println("Abhi"), i++){
 			
 			System.out.println("Im the Boss");
-			
 		}
 	}
-
 }
