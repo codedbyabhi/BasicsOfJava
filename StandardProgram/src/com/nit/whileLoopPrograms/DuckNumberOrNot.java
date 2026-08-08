@@ -1,0 +1,30 @@
+package com.nit.whileLoopPrograms;
+
+import java.util.Scanner;
+
+public class DuckNumberOrNot {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your Number : ");
+		int n = sc.nextInt();
+		int product = 1;
+		
+		while(n!=0) {
+			
+			int ld = n%10;
+			product = product*ld;
+			n=n/10;
+			
+		}
+		if(product==0) {
+			
+			System.out.println("Duck Number");
+		}
+		else {
+			
+			System.out.println("Not a Duck Number");
+		}
+	}
+
+}
