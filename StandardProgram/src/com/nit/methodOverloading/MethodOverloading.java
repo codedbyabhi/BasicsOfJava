@@ -4,7 +4,7 @@ public class MethodOverloading {
 
 	public static void main(String[] args) {
 		MethodOverloading obj = new MethodOverloading();
-		obj.add(10, 20, 30);
+		obj.add(10, 20, 40);
 
 	}
 
