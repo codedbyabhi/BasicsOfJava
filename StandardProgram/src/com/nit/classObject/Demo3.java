@@ -1,21 +1,22 @@
 package com.nit.classObject;
 
-public class Demo2 {
+public class Demo3 {
+
 	public static void main(String[] args) {
 		
-		student s1 = new student();
+		student1 s1=new student1();
 		s1.name = "Abhi";
 		s1.age = 12;
 		s1.school = "ABC School";
 		s1.city = "Hyderabad";
 
-		student s2 = new student();
+		student1 s2 = new student1();
 		s2.name = "Ramya";
 		s2.age = 13;
 		s2.school = "ABC School";
 		s2.city = "Hyderabad";
 
-		student s3 = new student();
+		student1 s3 = new student1();
 		s3.name = "Shekhar";
 		s3.age = 15;
 		s3.school = "ABC School";
@@ -28,10 +29,8 @@ public class Demo2 {
 		System.out.println("Student 3 details : ");
 		s3.display();
 	}
-
 }
-
-class student {
+class student1{
 
 	public String name;
 	public int age;
@@ -46,3 +45,4 @@ class student {
 	}		
 	
 }
+
