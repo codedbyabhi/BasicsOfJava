@@ -1,48 +1,36 @@
 package com.nit.classObject;
 
 public class Demo2 {
+
 	public static void main(String[] args) {
-		
-		student s1 = new student();
-		s1.name = "Abhi";
-		s1.age = 12;
-		s1.school = "ABC School";
-		s1.city = "Hyderabad";
 
-		student s2 = new student();
-		s2.name = "Ramya";
-		s2.age = 13;
-		s2.school = "ABC School";
-		s2.city = "Hyderabad";
-
-		student s3 = new student();
-		s3.name = "Shekhar";
-		s3.age = 15;
-		s3.school = "ABC School";
-		s3.city = "Hyderabad";
+		Car1 c1 = new Car1();
 		
-		System.out.println("Student 1 details : ");
-		s1.display();
-		System.out.println("Student 2 details : ");
-		s2.display();
-		System.out.println("Student 3 details : ");
-		s3.display();
+		c1.initialization("Honda", "Black", 18.0);
+		c1.displayDetails();
 	}
 
 }
 
-class student {
+class Car1 {
 
-	public String name;
-	public int age;
-	public static String school;
-	public static String city;
-
-	public void display() {
-		System.out.println("Name : "+name);
-		System.out.println("Age : "+age);
-		System.out.println("School : "+school);
-		System.out.println("City : "+city);
-	}		
+	public String company;
+	public String color;
+	public double milage;
 	
+	public void initialization(String comp, String clr, double mil) {
+		
+		company = comp;
+		color = clr;
+		milage = mil;
+		
+	}
+
+	public void displayDetails() {
+
+		System.out.println("Company : " + company);
+		System.out.println("Color : " + color);
+		System.out.println("Milage : " + milage + " Kmpl");
+	}
+
 }
