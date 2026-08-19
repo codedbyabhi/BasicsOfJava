@@ -9,12 +9,12 @@ class Demo4 {
 }
 
 class Car2 {
-	
+
 	public Car2() {
-		
+
 		System.out.println("Byeee");
 	}
-	
+
 	public Car2(String s) {
 		System.out.println("Hello");
 		System.out.println(s);
@@ -24,4 +24,3 @@ class Car2 {
 		System.out.println("Jump Bitchhh");
 	}
 }
-

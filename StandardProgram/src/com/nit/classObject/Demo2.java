@@ -21,9 +21,7 @@ public class Demo2 {
 		c3.initialization("BMW", "Black", 17.4);
 		c3.displayDetails();
 		System.out.println("\n");
-
 	}
-
 }
 
 class Car1 {
