@@ -17,7 +17,7 @@ public class Demo {
 
 	static {
 		
-		System.out.println("Lol "+x);
+		System.out.println("Abhijeet sabka papa "+x);
 	
 	}
 	static {
@@ -28,8 +28,13 @@ public class Demo {
 }
 class A{
 	
+	public A() {
+		
+		System.out.println("Sujit Deepak");
+	}
+	
 	static {
-		System.out.println("kooti randi ");
+		System.out.println("party When? ");
 	}
 	
 }
