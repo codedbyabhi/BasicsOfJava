@@ -17,7 +17,7 @@ class Mobile{
 	}
 	public int useMobile(int amount) {
 		
-		return ;
+		return amount - batteryPercentage;
 	}
 	
 	
