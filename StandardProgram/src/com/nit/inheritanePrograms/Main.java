@@ -17,7 +17,6 @@ public class Main {
 	}
 
 }
-
 class Calculation {
 
 	public int x;
