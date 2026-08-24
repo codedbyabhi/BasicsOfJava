@@ -58,12 +58,12 @@ class BonusEmployee extends Employee {
 	public void display() {
 
 		super.display();
-		//System.out.println("Bonus : " + bonus);
+		// System.out.println("Bonus : " + bonus);
 	}
 
 	public double calculateSalary() {
 
-	System.out.println("Basic Salary : " + super.calculateSalary());
+		System.out.println("Basic Salary : " + super.calculateSalary());
 		System.out.println("Bonus : " + bonus);
 		return super.calculateSalary() + bonus;
 	}
