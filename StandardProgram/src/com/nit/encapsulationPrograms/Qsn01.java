@@ -9,12 +9,17 @@ public static void main(String[] args) {
 	System.out.println("AccNo & Balance : ");
 	String accountNumber = sc.nextLine();
 	double balance = sc.nextDouble();
-	System.out.println("Enter amount to deposit");
+	System.out.println("Enter amount to deposit : ");
 	double deposit = sc.nextDouble();
+	System.out.println("Enter amount to withdraw :");
+	double withdraw = sc.nextDouble();
+	MobileApp acc = new MobileApp(accountNumber, balance);
+	acc.deposit(deposit);
+	acc.withdraw(withdraw);
+	System.out.println("Final available balance : "+acc.getBalance());
 	
 }
 
-	
 }
 class BankAccount {
 
