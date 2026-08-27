@@ -6,8 +6,9 @@ public class Qsn01 {
 public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);
-	System.out.println("AccNo & Balance : ");
+	System.out.println("Accunt Number : ");
 	String accountNumber = sc.nextLine();
+	System.out.println("Balance : ");
 	double balance = sc.nextDouble();
 	System.out.println("Enter amount to deposit : ");
 	double deposit = sc.nextDouble();
@@ -37,7 +38,7 @@ class BankAccount {
 		if (amount > 0) {
 
 			balance += amount;
-			System.out.println("Amount of " + amount + "is been deposited...!");
+			System.out.println("Amount of " + amount + " is been deposited...!");
 		} else {
 			System.out.println("Invalid deposit amount.");
 		}
@@ -47,7 +48,7 @@ class BankAccount {
 		if (amount > 0 && amount <= balance) {
 
 			balance -= amount;
-			System.out.println("Withdrawl of " + amount + "is dome successfully...!");
+			System.out.println("Withdrawl of " + amount + " is done successfully...!");
 		} else {
 			System.out.println("Insufficient Balance ");
 		}
