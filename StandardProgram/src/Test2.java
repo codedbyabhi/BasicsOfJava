@@ -15,6 +15,13 @@ class InventoryMain {
 		System.out.println("Price Per Unit : " + pricePerUnit);
 		System.out.println("Quantity       : " + quantityInStock);
 		System.out.println("Total Value    : " + Obj.calculateTotalValue());
+		System.out.println();
+		System.out.println("After Update:");
+		System.out.println();
+		System.out.println("Item Name      : " + itemName);
+		System.out.println("Price Per Unit : " + pricePerUnit);
+		System.out.println("Quantity       : " + Obj.getQuantityInStock());
+		System.out.println("Total Value    : " + Obj.calculateTotalValue());
 		
 		int choice = sc.nextInt();
 		if (choice == 1) {
