@@ -14,7 +14,7 @@ public class PrtQsn04 {
 	        double employeeSalary = sc.nextDouble();
 	        double increment = sc.nextDouble();
 
-	        Employee obj = new Employee(employeeNumber, employeeName, employeeSalary);
+	        Employee1 obj = new Employee1(employeeNumber, employeeName, employeeSalary);
 	        double currentSalary = obj.getEmployeeSalary();
 	        double updatedSalary = currentSalary + increment;
 	        obj.setEmployeeSalary(updatedSalary);
@@ -26,11 +26,11 @@ public class PrtQsn04 {
 	    }
 	}
 
-	class Employee {
+	class Employee1 {
 	    private int employeeNumber;
 	    private String employeeName;
 	    private double employeeSalary;
-	    public Employee(int employeeNumber, String employeeName, double employeeSalary) {
+	    public Employee1(int employeeNumber, String employeeName, double employeeSalary) {
 	        this.employeeNumber = employeeNumber;
 	        this.employeeName = employeeName;
 	        this.employeeSalary = employeeSalary;
