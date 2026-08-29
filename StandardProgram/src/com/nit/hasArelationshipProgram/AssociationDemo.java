@@ -24,9 +24,9 @@ class Student {
 	}
 
 	public void display() {
-		System.out.println(""+name);
-		System.out.println(""+age);
-		System.out.println(""+rollNumber);
+		System.out.println("Student name : "+name);
+		System.out.println("Student age : "+age);
+		System.out.println("Student Roll No : "+rollNumber);
 		System.out.println("Pen deatails : ");
 		pen.display();
 	}
@@ -48,9 +48,9 @@ class Pen {
 
 	public void display() {
 
-		System.out.println(""+brand);
-		System.out.println(""+colour);
-		System.out.println(""+type);
-		System.out.println(""+price);
+		System.out.println("Pen Brand : "+brand);
+		System.out.println("Pen colour : "+colour);
+		System.out.println("Pen type : "+type);
+		System.out.println("Price : "+price);
 	}
 }
