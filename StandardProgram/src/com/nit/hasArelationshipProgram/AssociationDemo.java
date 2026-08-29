@@ -4,7 +4,7 @@ public class AssociationDemo {
 	public static void main(String[] args) {
 
 		Pen p = new Pen("cello", "Black", "Ball", 15.0);
-		Student s = new Student("Kotti mera dost", 22, 101, p);
+		Student s = new Student("Abhi", 22, 101, p);
 		s.display();
 	}
 }
@@ -24,9 +24,9 @@ class Student {
 	}
 
 	public void display() {
-		System.out.println(name);
-		System.out.println(age);
-		System.out.println(rollNumber);
+		System.out.println(""+name);
+		System.out.println(""+age);
+		System.out.println(""+rollNumber);
 		System.out.println("Pen deatails : ");
 		pen.display();
 	}
@@ -48,9 +48,9 @@ class Pen {
 
 	public void display() {
 
-		System.out.println(brand);
-		System.out.println(colour);
-		System.out.println(type);
-		System.out.println(price);
+		System.out.println(""+brand);
+		System.out.println(""+colour);
+		System.out.println(""+type);
+		System.out.println(""+price);
 	}
 }
