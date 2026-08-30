@@ -22,4 +22,10 @@ class B {
 	public B() {
 		System.out.println("Good");
 	}
+	static{
+		System.out.println("Hi");
+	}
+	{
+		System.out.println("System");
+	}
 }
