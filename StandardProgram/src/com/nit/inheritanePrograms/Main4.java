@@ -115,7 +115,8 @@ public class Main4 {
                 x.applyDiscount(d);
                 System.out.println("Tax : " + x.calculateTax());
 
-            } else if (ch == 2) {
+            } 
+            else if (ch == 2) {
                 String n = sc.nextLine();
                 double p = sc.nextDouble();
                 sc.nextLine();
@@ -129,7 +130,8 @@ public class Main4 {
                 System.out.println("Tax : " + x.calculateTax());
                 System.out.println("Shipping Cost : " + x.calculateShippingCost());
 
-            } else {
+            } 
+            else {
                 System.out.println("Error Invalid Input.");
             }
 
