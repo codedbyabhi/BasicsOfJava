@@ -19,8 +19,8 @@ public class UpdateDriverScenario {
 	        int age = sc.nextInt();
 
 	        Driver d = new Driver(name, age);
-	        Car car1 = new Car(brand, model, year,d);
-	        Car car2 = new Car(car1);
+	        Car1 car1 = new Car1(brand, model, year,d);
+	        Car1 car2 = new Car1(car1);
 
 	        if(choice==1){
 	            sc.nextLine();
@@ -60,18 +60,18 @@ public class UpdateDriverScenario {
 	        this.age=age;
 	    }
 	}
-	class Car{
+	class Car1{
 	    private String brand;
 	    private String model;
 	    private int year;
 	    private Driver driver;
-	    Car(String brand, String model, int year, Driver driver){
+	    Car1(String brand, String model, int year, Driver driver){
 	        this.brand=brand;
 	        this.model=model;
 	        this.year=year;
 	        this.driver=driver;
 	    }
-	    Car(Car c){
+	    Car1(Car1 c){
 	        this.brand=c.brand;
 	        this.model=c.model;
 	        this.year=c.year;
