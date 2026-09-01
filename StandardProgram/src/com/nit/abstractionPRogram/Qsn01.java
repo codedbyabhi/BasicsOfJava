@@ -42,6 +42,9 @@ class PaymentFactory {
 		case 4 -> {
 			return new CashPayment();
 		}
+		case 5 ->{
+			return new GPay();
+		}
 		default -> {
 			System.out.println("it gives NullpointerException return ");
 			return null;
@@ -85,6 +88,12 @@ class CashPayment implements Payment {
 
 	public boolean pay(double amount) {
 		System.out.println("payment of " + amount + " is done using Cash Payment");
+		return true;
+	}
+}class GPay implements Payment {
+
+	public boolean pay(double amount) {
+		System.out.println("payment of " + amount + " is done using Gand Payment");
 		return true;
 	}
 }
