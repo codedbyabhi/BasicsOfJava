@@ -28,7 +28,7 @@ public class Main5 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter :");
+        System.out.println("Enter : ");
 
         int choice = sc.nextInt();
 

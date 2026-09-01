@@ -7,6 +7,7 @@ public class UpdateDriverScenario {
 	    public static void main(String []args){
 
 	        Scanner sc = new Scanner(System.in);
+	        System.out.println("Enter values : ");
 	        int choice = sc.nextInt();
 	        sc.nextLine();
 
