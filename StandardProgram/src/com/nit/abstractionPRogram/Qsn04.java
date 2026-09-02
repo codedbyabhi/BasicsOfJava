@@ -12,10 +12,8 @@ public class Qsn04 {
 		double salary = sc.nextDouble();
 		
 		Employee emp = FactoryClass.getImplementationObject(choice);
-		System.out.println("Bonus : "+emp.calculateBonus(salary));
-		
+		System.out.println("Bonus : "+emp.calculateBonus(salary));	
 	}
-
 }
 abstract class Employee{
 	public abstract double calculateBonus(double salary);
