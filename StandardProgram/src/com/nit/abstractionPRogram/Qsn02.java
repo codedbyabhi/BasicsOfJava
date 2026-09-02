@@ -1,9 +1,6 @@
 package com.nit.abstractionPRogram;
 
 import java.util.Scanner;
-
-import com.nit.abstractionPRogram.MessageFactory.MessageService;
-
 public class Qsn02 {
 	public static void main(String[] args) {
 
@@ -59,10 +56,10 @@ class MessageFactory {
 		case 3 -> {
 			obj = new WhatsappService();
 		}
-		}
+	}	
 		return obj;
-	}
-
+  }
+}
 	/*
 	 * System 2:- It defines the design with an interface and its implementation
 	 * classes
@@ -100,6 +97,5 @@ class WhatsappService implements MessageService {
 		return true;
 
 	}
- }
-
 }
+
