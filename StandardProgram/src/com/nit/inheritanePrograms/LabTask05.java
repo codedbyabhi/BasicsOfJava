@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class LabTask05 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Name and Salary : ");
 		String name = sc.nextLine();
 		double salary = sc.nextDouble();
 
@@ -13,17 +14,17 @@ public class LabTask05 {
 	}
 }
 
-class Employee {
+class Employee4 {
 	String name;
 	double salary;
 
-	Employee(String name, double salary) {
+	Employee4(String name, double salary) {
 		this.name = name;
 		this.salary = salary;
 	}
 }
 
-class Bonus extends Employee {
+class Bonus extends Employee4 {
 
 	Bonus(String name, double salary) {
 		super(name, salary);
