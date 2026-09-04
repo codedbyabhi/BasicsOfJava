@@ -14,9 +14,10 @@ public class Qsn06 {
 		for (int i = 0; i <= a.length - 1; i++) {
 
 			a[i] = sc.nextInt();
-		}int smallest = a[0];
+		}
+		int smallest = a[0];
 		for (int e : a) {
-			
+
 			if (e < smallest) {
 				smallest = e;
 			}
