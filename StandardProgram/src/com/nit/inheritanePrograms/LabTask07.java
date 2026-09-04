@@ -28,10 +28,10 @@ public class LabTask07 {
 		case 3: {
 			Customer5 c1 = new Customer5(name);
 			c1.display(choice);
-			
+			String name1 = sc.nextLine();
 			int loyaltyPoint = sc.nextInt();
-			PremiumCustomer p1 = new PremiumCustomer(name, loyaltyPoint);
-			p1.display(choice);
+			PremiumCustomer p = new PremiumCustomer(name1, loyaltyPoint);
+			p.display(choice);
 			
 			break;
 		}
