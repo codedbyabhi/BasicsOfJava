@@ -21,4 +21,4 @@ public class Qsn03 {
 				System.out.println("Sum is : "+sum);
 		}
 	}
- }	
+}
