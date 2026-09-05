@@ -1,11 +1,9 @@
 package com.nit.arrayPrograms;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Qsn09 {
+public class Qsn12 {
 	public static void main(String[] args) {
-
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter array size : ");
 		int size = sc.nextInt();
@@ -16,10 +14,15 @@ public class Qsn09 {
 
 			a[i] = sc.nextInt();
 		}
-		int[] b = new int[a.length];
-		for (int i = 0; i <= a.length - 1; i++) {
-			b[i] = a[(a.length - 1) - i];
+		System.out.println("Enter element to search");
+		int target = sc.nextInt();
+		int count = 0;
+		for (int e : a) {
+			if (e == target) {
+				count++;
+			}
 		}
-		System.out.println("Result is = " + Arrays.toString(b));
+		System.out.println(target + " appeared " + count + " times ");
 	}
+
 }
