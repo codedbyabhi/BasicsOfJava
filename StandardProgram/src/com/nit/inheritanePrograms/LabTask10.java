@@ -10,14 +10,14 @@ public class LabTask10 {
     
     }
 }
-class Customer{
+class Customer2{
 
     int age;
-    Customer(int age){
+    Customer2(int age){
         this.age=age;
     }
 }
-class PremiumType extends Customer{
+class PremiumType extends Customer2{
     PremiumType(int age){
         super(age);
     }

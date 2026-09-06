@@ -11,16 +11,16 @@ public class TestLab02 {
 		sc.nextLine();
 		String fuelType = sc.nextLine();
 		int seatingCapacity = sc.nextInt();
-		Car c = new Car(brand, speed, fuelType, seatingCapacity);
+		Car1 c = new Car1(brand, speed, fuelType, seatingCapacity);
 		c.displayCarDetails();
 	}
 }
 
-class Vehicle {
+class Vehicle1{
 	String brand;
 	int speed;
 
-	Vehicle(String brand, int speed) {
+	Vehicle1(String brand, int speed) {
 		this.brand = brand;
 		this.speed = speed;
 	}
@@ -32,11 +32,11 @@ class Vehicle {
 	}
 }
 
-class Car extends Vehicle {
+class Car1 extends Vehicle1 {
 	String fuelType;
 	int seatingCapacity;
 
-	Car(String brand, int speed, String fuelType, int seatingCapacity) {
+	Car1(String brand, int speed, String fuelType, int seatingCapacity) {
 		super(brand, speed);
 		this.fuelType = fuelType;
 		this.seatingCapacity = seatingCapacity;

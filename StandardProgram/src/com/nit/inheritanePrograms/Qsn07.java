@@ -42,7 +42,7 @@ public class Qsn07 {
 		String booksHandled = sc.nextLine();
 
 		// Student
-		Student s = new Student(studentName, studentId, studentDepartment, studentMarks);
+		Student5 s = new Student5(studentName, studentId, studentDepartment, studentMarks);
 		s.displayDetails();
 		s.login();
 		s.writtenExam();
@@ -107,11 +107,11 @@ class User {
 	}
 }
 
-class Student extends User {
+class Student5 extends User {
 
 	public int marks;
 
-	public Student(String name, int id, String dept, int marks) {
+	public Student5(String name, int id, String dept, int marks) {
 		super(name, id, dept);
 		this.marks = marks;
 	}
