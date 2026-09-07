@@ -23,6 +23,6 @@ public class Qsn06 {
 			}
 
 		}
-		System.out.println("The largest element is " + smallest);
+		System.out.println("The Smallest element is " + smallest);
 	}
 }
