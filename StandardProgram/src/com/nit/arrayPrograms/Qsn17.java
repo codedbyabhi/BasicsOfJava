@@ -14,6 +14,18 @@ public class Qsn17 {
 
 			a[i] = sc.nextInt();
 		}
+		boolean isArrayinAscendingOrder = true;
+		for (int i = 0; i <= a.length - 2; i++) {
+			if (a[i + 1] < a[i]) {
+				isArrayinAscendingOrder = false;
+				break;
+			}
+		}
+		if (isArrayinAscendingOrder) {
+			System.out.println("Array sorted in Ascending Order");
+		} 
+		else {
+			System.out.println("Array is not sorted in Ascending Order");
+		}
 	}
-
 }
