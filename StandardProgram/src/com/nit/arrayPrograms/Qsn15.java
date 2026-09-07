@@ -14,6 +14,10 @@ public class Qsn15 {
 
 			a[i] = sc.nextInt();
 		}
-		
+		int sum = 0;
+		for (int e : a) {
+			sum += e;
+		}
+		System.out.println("Average = " + (sum / a.length));
 	}
 }
