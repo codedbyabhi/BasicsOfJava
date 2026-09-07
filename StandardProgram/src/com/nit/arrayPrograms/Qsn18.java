@@ -20,7 +20,7 @@ public class Qsn18 {
 		int start = 0;
 		int end = a.length - 1;
 
-		while (start < end) {
+		while (start <= end) {
 			int midIndex = (start + end) / 2;
 			if (a[midIndex] == target) {
 				isPresent = true;
@@ -35,8 +35,8 @@ public class Qsn18 {
 			}
 
 		}
-		if (isPresent==true) {
-			System.out.println(target+" T000000he element is present ");
+		if (isPresent) {
+			System.out.println(target+" The element is present ");
 		} 
 		else {
 			System.out.println(target+" The element is NOT present");
