@@ -15,7 +15,7 @@ public class Qsn20 {
 		for (int i = 0; i <= a.length - 1; i++) {
 
 			boolean isPreviousPresent = false;
-			for (int j = 0; j <= a.length - 1; j++) {
+			for (int j = 0; j <= i-1; j++) {
 				if (a[j] == a[i]) {
 
 					isPreviousPresent = true;
