@@ -20,6 +20,7 @@ public class Qsn23 {
 		for (int i = 1; i <= k; i++) {
 
 			int temp = a[a.length - 1];
+		
 			for (int j = a.length-2; j >= 0; j--) {
 
 				a[j + 1] = a[j];
