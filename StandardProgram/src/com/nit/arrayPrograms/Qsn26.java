@@ -8,9 +8,9 @@ public class Qsn26 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter array size : ");
 		int size = sc.nextInt();
-		System.out.println("Enter array element one by one : ");
 		int [] a = new int[size];
 
+		System.out.println("Enter array element one by one : ");
 		for (int i = 0; i <= a.length - 1; i++) {
 
 			a[i] = sc.nextInt();
@@ -36,12 +36,11 @@ public class Qsn26 {
 	public static boolean isPreviouslyPresent(int[] a, int i) {
 
 		boolean result = false;
-		for (int j = 0; i <= i - 1; j++) {
+		for (int j = 0; j <= i - 1; j++) {
 
 			if (a[j] == a[i]) {
 
 				result = true;
-				break;
 			}
 		}
 		return result;
