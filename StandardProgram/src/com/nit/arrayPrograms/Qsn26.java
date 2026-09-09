@@ -1,5 +1,6 @@
 package com.nit.arrayPrograms;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Qsn26 {
@@ -8,16 +9,41 @@ public class Qsn26 {
 		System.out.println("Enter array size : ");
 		int size = sc.nextInt();
 		System.out.println("Enter array element one by one : ");
-		int[] a = new int[size];
+		int [] a = new int[size];
 
 		for (int i = 0; i <= a.length - 1; i++) {
 
 			a[i] = sc.nextInt();
 		}
-		int x = 0;
+		int count = 0;
 		for (int i = 0; i <= a.length - 1; i++) {
-			if()
-
+			if (isPreviouslyPresent(a, i) == false) {
+				count++;
+			}
 		}
+
+		int [] b = new int[count];
+		int index = 0;
+		for (int i = 0; i <=a.length - 1; i++) {
+			if (isPreviouslyPresent(a, i) == false) {
+				b[index] = a[i];
+				index++;
+			}
+		}
+		System.out.println("Result = " + Arrays.toString(b));
+	}
+
+	public static boolean isPreviouslyPresent(int[] a, int i) {
+
+		boolean result = false;
+		for (int j = 0; i <= i - 1; j++) {
+
+			if (a[j] == a[i]) {
+
+				result = true;
+				break;
+			}
+		}
+		return result;
 	}
 }
