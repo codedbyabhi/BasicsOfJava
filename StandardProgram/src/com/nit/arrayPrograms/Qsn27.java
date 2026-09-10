@@ -4,8 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Qsn27 {
-	public static void main(String []args) {
-		
+	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter array size : ");
@@ -17,22 +16,20 @@ public class Qsn27 {
 
 			a[i] = sc.nextInt();
 		}
-		System.out.println("Result = "+Arrays.toString(reverse(a)));
-		
+		System.out.println("Result = " + Arrays.toString(reverse(a)));
 	}
-		public static int[] reverse(int []a) {
-			
-			int left = 0;
-			int right =a.length-1;
-			while(left<right) {
-				int temp = a[left];
-				a[left] = a[right];
-				a[right]=temp;
-				left++;
-				right--;
-			}
-			return a;
+
+	public static int[] reverse(int[] a) {
+
+		int left = 0;
+		int right = a.length - 1;
+		while (left < right) {
+			int temp = a[left];
+			a[left] = a[right];
+			a[right] = temp;
+			left++;
+			right--;
+		}
+		return a;
 	}
 }
-
-

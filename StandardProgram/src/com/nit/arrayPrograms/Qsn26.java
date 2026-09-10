@@ -8,7 +8,7 @@ public class Qsn26 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter array size : ");
 		int size = sc.nextInt();
-		int [] a = new int[size];
+		int[] a = new int[size];
 
 		System.out.println("Enter array element one by one : ");
 		for (int i = 0; i <= a.length - 1; i++) {
@@ -22,9 +22,9 @@ public class Qsn26 {
 			}
 		}
 
-		int [] b = new int[count];
+		int[] b = new int[count];
 		int index = 0;
-		for (int i = 0; i <=a.length - 1; i++) {
+		for (int i = 0; i <= a.length - 1; i++) {
 			if (isPreviouslyPresent(a, i) == false) {
 				b[index] = a[i];
 				index++;
