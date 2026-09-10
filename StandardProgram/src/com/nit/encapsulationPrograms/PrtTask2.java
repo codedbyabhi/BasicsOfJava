@@ -10,18 +10,18 @@ public class PrtTask2 {
 		long accountNumber = sc.nextLong();
 		System.out.println("Enter AccountHolder name: ");
 		sc.nextLine();
-		String accountHolderName =sc.nextLine();
-		System.out.println("Enter Balance: ");
-		double balance = sc.nextDouble();
+		String accountHolderName = sc.nextLine();
 		System.out.println("Enter deposit amount: ");
 		double amount = sc.nextDouble();
 		b.setAccountNumber(accountNumber);
 		b.setAccountHolderName(accountHolderName);
 		b.diposit(amount);
+		b.diposit(amount=sc.nextDouble());
 		
-		System.out.println("Account Number: "+b.getAccountNumber());
-		System.out.println("Account Holder: "+b.getAccountHolderName());
-		System.out.println("Balance: "+b.getBalance());
+
+		System.out.println("Account Number: " + b.getAccountNumber());
+		System.out.println("Account Holder: " + b.getAccountHolderName());
+		System.out.println("Balance: " + b.getBalance());
 	}
 }
 
@@ -37,7 +37,8 @@ class BankAccount3 {
 	public void setAccountNumber(long accountNumber) {
 		if (accountNumber > 0) {
 			this.accountNumber = accountNumber;
-		} else {
+		} 
+		else {
 			this.accountNumber = 0;
 		}
 	}
@@ -49,6 +50,7 @@ class BankAccount3 {
 	public void setAccountHolderName(String accountHolderName) {
 		this.accountHolderName = accountHolderName;
 	}
+
 	public double getBalance() {
 		return balance;
 	}
