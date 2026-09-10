@@ -1,10 +1,9 @@
-//Bubble SOrt Example IMPPPPPPP.
 package com.nit.arrayPrograms;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Qsn32 {
+public class Qsn34 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter array size : ");
@@ -16,19 +15,18 @@ public class Qsn32 {
 
 			a[i] = sc.nextInt();
 		}
-		for (int cycle = 1; cycle <= a.length - 1; cycle++) {
-
-			for (int i = 0; i <= a.length - 2; i++) {
-
-				if (a[i + 1] < a[i]) {
-					int temp = a[i];
-					a[i] = a[i + 1];
-					a[i + 1] = temp;
-
+		for (int i = 0; i <= a.length - 1; i++) {
+			int minIndex = i;
+			for (int j = i; j <= a.length - 1; j++) {
+				if (a[j] < a[minIndex]) {
+					minIndex = j;
 				}
 			}
+			int temp = a[minIndex];
+			a[minIndex] = a[i];
+			a[i] = temp;
 		}
 		System.out.println(Arrays.toString(a));
-
 	}
+
 }
