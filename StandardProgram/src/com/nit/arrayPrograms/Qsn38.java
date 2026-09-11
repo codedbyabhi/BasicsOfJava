@@ -1,3 +1,5 @@
+package com.nit.arrayPrograms;
+
 import java.util.Scanner;
 
 public class Qsn38 {
