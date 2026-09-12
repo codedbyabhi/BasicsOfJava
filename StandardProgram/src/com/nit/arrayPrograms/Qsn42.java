@@ -40,24 +40,24 @@ public class Qsn42 {
 		}
 		int c[] = new int[a.length + count];
 		for (int i = 0; i <= a.length - 1; i++) {
-			c[i]=a[i];
+			c[i] = a[i];
 		}
 		int index = a.length;
-		for(int i = 0; i<=a.length-1;i++) {
-			
+		for (int i = 0; i <= a.length - 1; i++) {
+
 			boolean isPresent = false;
-			for(int j =0; j<=a.length-1;j++) {
-				if(a[j]==a[i]) {
+			for (int j = 0; j <= a.length - 1; j++) {
+				if (a[j] == a[i]) {
 					isPresent = true;
 					break;
 				}
 			}
-			if(isPresent==false) {
+			if (isPresent == false) {
 				c[index] = b[i];
 				index++;
 			}
 		}
-		System.out.println("Result Array = "+Arrays.toString(c));
+		System.out.println("Result Array = " + Arrays.toString(c));
 
 	}
 
