@@ -1,5 +1,7 @@
 package com.nit.arrayPrograms;
 
+import java.time.chrono.IsoChronology;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Qsn42 {
@@ -34,10 +36,29 @@ public class Qsn42 {
 			if (isPreviouslyPresent == false) {
 				count++;
 			}
-			
+
 		}
-		
-		
+		int c[] = new int[a.length + count];
+		for (int i = 0; i <= a.length - 1; i++) {
+			c[i]=a[i];
+		}
+		int index = a.length;
+		for(int i = 0; i<=a.length-1;i++) {
+			
+			boolean isPresent = false;
+			for(int j =0; j<=a.length-1;j++) {
+				if(a[j]==a[i]) {
+					isPresent = true;
+					break;
+				}
+			}
+			if(isPresent==false) {
+				c[index] = b[i];
+				index++;
+			}
+		}
+		System.out.println("Result Array = "+Arrays.toString(c));
+
 	}
 
 }
