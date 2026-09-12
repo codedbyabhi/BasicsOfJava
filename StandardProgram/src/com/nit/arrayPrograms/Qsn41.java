@@ -37,7 +37,7 @@ public class Qsn41 {
 				
 			}
 			if(isPresent) {
-				System.out.println(a[i]);
+				System.out.println("This is repeated element : "+a[i]+" ");
 			}
 		}
 		
