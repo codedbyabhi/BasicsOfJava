@@ -21,12 +21,12 @@ public class Qsn02 {
 	}
 }
 
-class Employee {
+class Employee4 {
 	private int empId;
 	private String empName;
 	private double salary;
 
-	public Employee(int empId, String empName, double salary) {
+	public Employee4(int empId, String empName, double salary) {
 
 		this.empId = empId;
 		this.empName = empName;
@@ -64,7 +64,7 @@ class Employee {
 	}
 }
 
-class HrDepartment extends Employee {
+class HrDepartment extends Employee4 {
 
 	public HrDepartment(int empId, String empName, double salary) {
 		super(empId, empName, salary);

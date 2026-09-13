@@ -7,17 +7,17 @@ class ExamQsn3{
         int choice = sc.nextInt();
         switch(choice){
             case 1 -> {
-                BankAccount b1 = new BankAccount(balance);
+                BankAccount4 b1 = new BankAccount4(balance);
                 double amount = sc.nextDouble();
                 b1.deposit(amount);
             }
             case 2 -> {
-                BankAccount b1 = new BankAccount(balance);
+                BankAccount4 b1 = new BankAccount4(balance);
                 double amount = sc.nextDouble();
                 b1.withdraw(amount);
             }
             case 3 -> {
-                BankAccount b1 = new BankAccount(balance);
+                BankAccount4 b1 = new BankAccount4(balance);
                 b1.getBalance();
             }
 
@@ -25,10 +25,10 @@ class ExamQsn3{
     }
 
 }
-class BankAccount{
+class BankAccount4{
     private double balance;
 
-    BankAccount(double balance){
+    BankAccount4(double balance){
         this.balance=balance;
     }
     public void deposit(double amount){
