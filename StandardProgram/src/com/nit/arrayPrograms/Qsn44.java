@@ -1,5 +1,6 @@
 package com.nit.arrayPrograms;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Qsn44 {
@@ -19,6 +20,12 @@ public class Qsn44 {
 		System.out.println("Enter Second Array elements : ");
 		for (int i = 0; i <= b.length - 1; i++) {
 			b[i] = sc.nextInt();
+		}
+		if (Arrays.equals(a, b)) {
+			System.out.println("Arrays are equal");
+		} 
+		else {
+			System.out.println("Arrays are not equal");
 		}
 
 	}
