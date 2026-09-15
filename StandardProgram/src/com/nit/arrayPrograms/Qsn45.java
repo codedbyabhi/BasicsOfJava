@@ -15,10 +15,10 @@ public class Qsn45 {
 
 			a[i] = sc.nextInt();
 		}
-		System.out.println("Enter first array size : ");
+		System.out.println("Enter second array size : ");
 		int size2 = sc.nextInt();
 		int[] b = new int[size2];
-		System.out.println("Enter first array elements one by one : ");
+		System.out.println("Enter second array elements one by one : ");
 
 		for (int i = 0; i <= b.length - 1; i++) {
 
@@ -34,7 +34,7 @@ public class Qsn45 {
 				c[index] = a[x];
 				x++;
 			} else {
-				c[index] = a[x];
+				c[index] = a[y];
 				y++;
 			}
 		}
