@@ -18,7 +18,7 @@ public class Qsn03 {
 		int sum =0;
 		for (int e : a) {
 				sum = sum + e;
-				System.out.println("Sum is : "+sum);
 		}
+		System.out.println("Sum is : "+sum);
 	}
 }
