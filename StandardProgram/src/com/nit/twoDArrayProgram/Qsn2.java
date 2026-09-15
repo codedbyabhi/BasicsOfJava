@@ -5,9 +5,6 @@ import java.util.Scanner;
 
 public class Qsn2 {
 	public static void main(String[] args) {
-//		Scanner sc = new Scanner(System.in);
-//		int size1 = sc.nextInt();
-//		int size2 = sc.nextInt();
 
 		int[][] a = new int[3][3];
 		a[0][0] = 10;
