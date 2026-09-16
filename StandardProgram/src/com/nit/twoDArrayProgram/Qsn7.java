@@ -1,9 +1,8 @@
-//Practice this  
 package com.nit.twoDArrayProgram;
 
 import java.util.Scanner;
 
-public class Qsn6 {
+public class Qsn7 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter number of Rows of First Matrix: ");
@@ -38,7 +37,7 @@ public class Qsn6 {
 		int[][] c = new int[a.length][b.length];
 		for (int i = 0; i <= c.length - 1; i++) {
 			for (int j = 0; j <= c[i].length - 1; j++) {
-				c[i][j] = a[i][j] + b[i][j];
+				c[i][j] = a[i][j] - b[i][j];
 			}
 		}
 		System.out.println("Result = ");
