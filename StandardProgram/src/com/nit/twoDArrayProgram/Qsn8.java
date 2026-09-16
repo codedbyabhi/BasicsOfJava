@@ -1,3 +1,4 @@
+//To determine two matrix are equal or not. 
 package com.nit.twoDArrayProgram;
 
 import java.util.Scanner;
@@ -33,6 +34,26 @@ public class Qsn8 {
 				b[i][j] = sc.nextInt();
 			}
 		}
+		
+		
+		boolean isEqual = true;
+		outer:
+		for (int i = 0; i <= b.length - 1; i++) {
+			inner:
+			for (int j = 0; j <= b[i].length - 1; j++) {
+				if(a[i][j]!=b[i][j]) {
+					isEqual = false;
+					break outer;
+				}
+			}
+		}
+		if(isEqual) {
+			System.out.println("Matrix are Equal.");
+		}
+		else {
+			System.out.println("Matrix are Not Equal");
+		}
+		
 	}
 
 }

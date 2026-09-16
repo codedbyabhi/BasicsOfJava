@@ -34,6 +34,8 @@ public class Qsn7 {
 			}
 		}
 
+		
+		
 		int[][] c = new int[a.length][b.length];
 		for (int i = 0; i <= c.length - 1; i++) {
 			for (int j = 0; j <= c[i].length - 1; j++) {
