@@ -2,7 +2,7 @@ package com.nit.twoDArrayProgram;
 
 import java.util.Scanner;
 
-public class Qsn11 {
+public class Qsn12 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter number of Rows of First Matrix: ");
@@ -19,25 +19,22 @@ public class Qsn11 {
 				a[i][j] = sc.nextInt();
 			}
 		}
+
 		
 		
-		
-		
-		
-		int even = 0;
-		int odd = 0;
 		for (int i = 0; i <= a.length - 1; i++) {
-
+			int sum = 0;
 			for (int j = 0; j <= a[i].length - 1; j++) {
-				if (a[i][j] % 2 == 0) {
-					even++;
-				} else {
-					odd++;
-				}
+				sum = sum + a[i][j];
 			}
+			System.out.println("Sum of "+(i+1)+" Row : "+sum);
 		}
-		System.out.println("Frequency of even Number : " + even);
-		System.out.println("Frequency of odd Number : " + odd);
-
+		for (int i = 0; i <= a.length - 1; i++) {
+			int sum = 0;
+			for (int j = 0; j <= a[i].length - 1; j++) {
+				sum = sum + a[j][i];
+			}
+			System.out.println("Sum of "+(i+1)+" Column : "+sum);
+		}
 	}
 }
