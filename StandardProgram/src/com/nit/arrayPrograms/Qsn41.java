@@ -14,7 +14,6 @@ public class Qsn41 {
 			
 			a[i] = sc.nextInt();
 		}
-		
 		System.out.println("Enter Second Array Size : ");
 		int size1 = sc.nextInt();
 		int b [] = new int[size1];

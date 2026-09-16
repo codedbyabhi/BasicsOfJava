@@ -1,7 +1,6 @@
 package com.nit.twoDArrayProgram;
 
 import java.util.Scanner;
-
 public class Qsn4 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -18,7 +17,6 @@ public class Qsn4 {
 			for (int j = 0; j <= a[i].length - 1; j++) {
 				a[i][j] = sc.nextInt();
 			}
-
 		}
 		System.out.println("Given two directional jagged array is : ");
 		for (int i = 0; i <= a.length - 1; i++) {
@@ -28,7 +26,5 @@ public class Qsn4 {
 			}
 			System.out.println();
 		}
-
 	}
-
 }
