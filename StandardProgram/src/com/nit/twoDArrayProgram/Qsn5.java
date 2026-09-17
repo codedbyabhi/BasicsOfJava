@@ -21,6 +21,7 @@ public class Qsn5 {
 		}
 		
 		
+		
 		System.out.println("Give the Matrix : ");
 		for (int i = 0; i <= a.length - 1; i++) {
 
@@ -29,7 +30,13 @@ public class Qsn5 {
 			}
 			System.out.println();
 		}
-
 	}
+}
 
+
+if(a.length % 2 != 0){
+    System.out.println(a[a.length / 2]);
+}
+else{
+    System.out.println(a[a.length / 2 - 1] + " " + a[a.length / 2]);
 }
