@@ -2,7 +2,7 @@ package com.nit.twoDArrayProgram;
 
 import java.util.Scanner;
 
-public class Qsn13 {
+public class Qsn14 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter number of Rows of First Matrix: ");
@@ -20,24 +20,21 @@ public class Qsn13 {
 			}
 		}
 
-		
-		
-		for (int i = 0; i <= a.length - 1; i++) {
+		boolean isIdentity = true;
+		outer: for (int i = 0; i <= a.length - 1; i++) {
+			inner: for (int j = 0; j <= a[i].length - 1; j++) {
 
-			for (int j = 0; j <= a[i].length - 1; j++) {
-				if (i < j) {
-					int temp = a[i][j];
-					a[i][j] = a[j][i];
-					a[j][i] = temp;
+				if ((i == j && a[i][j] != 1) || (i != j && a[i][j] != 0)) {
+					isIdentity = false;
+					break outer;
 				}
 			}
 		}
-		for (int i = 0; i <= a.length - 1; i++) {
-
-			for (int j = 0; j <= a[i].length - 1; j++) {
-				System.out.print(a[i][j] + " ");
-			}
-			System.out.println();
+		if (isIdentity) {
+			System.out.println("Identity Matrix.");
+		} 
+		else {
+			System.out.println("Identity is Not Matrix.");
 		}
 	}
 }

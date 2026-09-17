@@ -2,17 +2,17 @@ package com.nit.twoDArrayProgram;
 
 import java.util.Scanner;
 
-public class Qsn5 {
+public class Qsn15 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter number of Rows : ");
+		System.out.println("Enter number of Rows of First Matrix: ");
 		int rows = sc.nextInt();
-		System.out.println("Enter number of Columns : ");
+		System.out.println("Enter number of Columns of First Matrix: ");
 		int column = sc.nextInt();
 
 		int[][] a = new int[rows][column];
 
-		System.out.println("Enter the Matrix : ");
+		System.out.println("Enter the First Matrix : ");
 		for (int i = 0; i <= a.length - 1; i++) {
 
 			for (int j = 0; j <= a[i].length - 1; j++) {
@@ -21,14 +21,21 @@ public class Qsn5 {
 		}
 		
 		
-		
-		System.out.println("Give the Matrix : ");
+		int count = 0;
 		for (int i = 0; i <= a.length - 1; i++) {
 
 			for (int j = 0; j <= a[i].length - 1; j++) {
-				System.out.print(a[i][j]+" ");
+
+				if (a[i][j] == 0) {
+					count++;
+				}
 			}
-			System.out.println();
+		}
+			if(count>(rows*column)/2) {
+				System.out.println("This is Sparse Matrix");
+			}
+			else {
+				System.out.println("This is Not Sparse Matrix");
 		}
 	}
 }
