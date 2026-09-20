@@ -41,19 +41,19 @@ public class CheckAnagramString2 {
 			}
 		}
 
-		String result1 = "";
+		boolean equal = true;
 		for (int i = 0; i < s1.length() - 1; i++) {
-			result1 += a[i];
+			if (a[i] != b[i]) {
+				equal = false;
+				break;
+
+			}
 		}
 
-		String result2 = "";
-		for (int i = 0; i < s2.length() - 1; i++) {
-			result2 += b[i];
-		}
-
-		if (result1.equals(result2)) {
+		if ((a.length == b.length) && equal == true) {
 			System.out.println("Anagram");
-		} else {
+		} 
+		else {
 			System.out.println("Not Anagram");
 		}
 
