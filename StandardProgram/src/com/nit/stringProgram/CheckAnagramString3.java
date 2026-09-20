@@ -11,16 +11,16 @@ public class CheckAnagramString3 {
 		System.out.println("Enter the 2nd iString : ");
 		String s2 = sc.nextLine();
 
-		char[] a = s1.toCharArray();
+		char[] a = new char[s1.length()];
 		for (int i = 0; i < s1.length() - 1; i++) {
 
 			a[i] = s1.charAt(i);
 		}
 
-		char[] b = s2.toCharArray();
-		for (int i = 0; i < s1.length() - 1; i++) {
+		char[] b = new char[s2.length()];
+		for (int i = 0; i <=s2.length() - 1; i++) {
 
-			b[i] = s1.charAt(i);
+			b[i] = s2.charAt(i);
 		}
 		for (int cycle = 1; cycle <= a.length - 1; cycle++) {
 			for (int i = 0; i < s1.length() - 2; i++) {
