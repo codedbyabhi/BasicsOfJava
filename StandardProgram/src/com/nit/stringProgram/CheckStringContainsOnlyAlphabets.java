@@ -1,29 +1,28 @@
-//incomplete.
 package com.nit.stringProgram;
 
 import java.util.Scanner;
 
-public class CheckStringContainsOnlyDigit {
+public class CheckStringContainsOnlyAlphabets {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter String : ");
 		String s = sc.nextLine();
 
-		boolean found = true;
+		boolean found = false;
 		for (int i = 0; i < s.length(); i++) {
 			char ch = s.charAt(i);
 			
-			if ((ch >= '0' && ch <= '9')) {
-				found = false;
+			if ((ch >= 'A' && ch <= 'Z')||(ch>='a'&&ch<='z')) {
+				found = true;
 				break;
 			}
 		}
 			
-			if (found) {
-				System.out.println("String Not Contains Digit");
+			if(!found) {
+				System.out.println("String Not Contains Alphabets");
 			} 
 			else {
-				System.out.println("String Contains Digit");
+				System.out.println("String Contains Alphabets");
 			}
 
 	}
