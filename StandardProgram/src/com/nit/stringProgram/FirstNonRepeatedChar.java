@@ -7,7 +7,8 @@ public class FirstNonRepeatedChar {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter String : ");
 		String s = sc.nextLine();
-
+		
+		boolean isNonReapeated = false;
 		for (int i = 0; i < s.length(); i++) {
 			int count = 0;
 			for (int j = 0; j < s.length(); j++) {
@@ -17,8 +18,12 @@ public class FirstNonRepeatedChar {
 			}
 			if(count==1) {
 				System.out.println("First non-reapeated char :"+s.charAt(i));
+					isNonReapeated = true;
+					break;
 			}
 		}
-		if(isN)
+		if(isNonReapeated==false) {
+			System.out.println("There is no non-repeated character!!!");
+		}
 	}
 }
