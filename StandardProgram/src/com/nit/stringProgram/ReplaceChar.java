@@ -7,6 +7,7 @@ public class ReplaceChar {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter String : ");
 		String s = sc.nextLine();
+		
 		System.out.println("Enter which Char shoild be Replaced : ");
 		char oldChar = sc.next().charAt(0);
 		System.out.println("Enter by which char the onther char should be replaces");
