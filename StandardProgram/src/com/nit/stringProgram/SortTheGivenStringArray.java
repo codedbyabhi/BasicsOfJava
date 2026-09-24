@@ -25,7 +25,7 @@ public class SortTheGivenStringArray {
 					a[i + 1] = temp;
 
 				}
-			}
+			} 
 		}
 		System.out.println(Arrays.toString(a));
 
