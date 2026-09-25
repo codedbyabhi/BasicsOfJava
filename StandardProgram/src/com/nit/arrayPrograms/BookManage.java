@@ -21,13 +21,38 @@ public class BookManage {
 
 			a[i] = new Book(authorName, tital, price, publishedYear);
 		}
+		System.out.println("========================");
+		System.out.println("Enter 1 for getting details of the books by author name.");
+		System.out.println("Enter 2 for getting details of the books published after a year.");
+		System.out.println("Enter 3 for average price of the book.");
+		System.out.println("========================");
+		System.out.println("Enter your choice : ");
+		int choice = sc.nextInt();
+		switch (choice) {
+
+		case 1 -> {
+
+			sc.nextLine();
+			System.out.println("Enter author name : ");
+			String authorName = sc.nextLine();
+			BooksByAuthor(authorName);
+		}
+		case 2 -> {
+
+			sc.nextLine();
+			System.out.println("Enter a year : ");
+			int year = sc.nextInt();
+			BooksAfterCertainYear(year);
+		}
+		case 3 -> {
+			AvgPriceOfBook();
+		}
+		default -> {
+			System.out.println("Enter valid choice.");
+		}
+		}
+
 	}
-//		System.out.println("Available Books are : ");
-//		for (Book b : a) {
-//			b.displayDetails();
-//		}
-//
-//	}
 
 	public static void BooksByAuthor(String authorName) {
 		for (Book b : a) {
@@ -38,23 +63,23 @@ public class BookManage {
 			}
 		}
 	}
+
 	public static void BooksAfterCertainYear(int year) {
 		for (Book b : a) {
 
-			if (b.publishedYear>year) {
+			if (b.publishedYear > year) {
 				b.displayDetails();
 				System.out.println("========================");
 			}
 		}
 	}
-	public static void calculateAvgPrice() {
-		for (Book b : a) {
 
-			if () {
-				b.displayDetails();
-				System.out.println("========================");
-			}
+	public static void AvgPriceOfBook() {
+		double sum = 0;
+		for (Book b : a) {
+			sum = sum + b.price;
 		}
+		System.out.println("Avrage price = " + (sum / a.length));
 	}
 }
 
