@@ -15,7 +15,7 @@ public class AccentureQsn01
 				int count = 0;
 				for(int j = 0;j<=s.length()-1;j++)
 				{
-					if(s.charAt(i)==s.charAt(j))
+					if(s.charAt(i)==s.charAt(j)):
 					{
 						count++;
 					}
