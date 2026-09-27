@@ -13,7 +13,7 @@ public class AccentureQsn01
 			if(!result.contains(s.charAt(i)+""))
 			{
 				int count = 0;
-				for(int j = 0;j<=s.length()-1;j++)
+				for(int j = 0;j<=s.length()-1;j++);
 				{
 					if(s.charAt(i)==s.charAt(j))
 					{
