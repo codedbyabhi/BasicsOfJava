@@ -14,7 +14,7 @@ public class ReadAnIntegerArray {
 		for(int i =0;i<a.length;i++) {
 			a[i]=sc.nextInt();
 		}
-		System.out.println(Arrays.toString(a))
+		System.out.println(Arrays.toString(a));
 	}
 
 }
