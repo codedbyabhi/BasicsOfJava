@@ -2,7 +2,7 @@ package com.nit.arrayPrograms;
 
 import java.util.Scanner;
 
-public class SumOfAllElement {
+public class CountEvenAndOddElements {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Array size : ");
@@ -13,12 +13,20 @@ public class SumOfAllElement {
 		for (int i = 0; i < a.length; i++) {
 			a[i] = sc.nextInt();
 		}
-		int sum = 0;
-		for (int e : a) {
-			sum += e;
+		int even = 0;
+		int odd = 0;
+
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] % 2 == 0) {
+				even++;
+			}
+			if (a[i] % 2 == 1) {
+				odd++;
+			}
 
 		}
-		System.out.println("Sum of All elements : " + sum);
+		System.out.println("Even Count is : " + even);
+		System.out.println("Odd Count is : " + odd);
 	}
 
 }
