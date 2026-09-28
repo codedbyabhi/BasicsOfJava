@@ -13,12 +13,12 @@ public class SumOfAllElement {
 		for (int i = 0; i < a.length; i++) {
 			a[i] = sc.nextInt();
 		}
-		int sum =0;
-		for(int e:a) {
-			sum +=e;
-			
+		int sum = 0;
+		for (int e : a) {
+			sum += e;
+
 		}
-		System.out.println("Sum of All elements : "+sum);
+		System.out.println("Sum of All elements : " + sum);
 	}
 
 }
