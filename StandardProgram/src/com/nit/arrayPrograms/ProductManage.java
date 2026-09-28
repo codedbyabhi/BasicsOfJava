@@ -1,7 +1,8 @@
+//menu deaven.
 package com.nit.arrayPrograms;
 
 import java.util.Scanner;
-
+  x 
 public class ProductManage {
 	static Product[] a;
 
