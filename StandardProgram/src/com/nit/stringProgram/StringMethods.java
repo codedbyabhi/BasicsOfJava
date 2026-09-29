@@ -1,7 +1,10 @@
 package com.nit.stringProgram;
 
+import java.lang.System;
+
 public class StringMethods {
 	public static void main(String[] args) {
+
 		String s = new String("ABC");
 		String s2 = "Hello";
 		StringBuffer sb = new StringBuffer("DEF");
@@ -24,3 +27,4 @@ public class StringMethods {
 	//	sb.getChars(1, 3, "a", 4);
 	}
 }
+                       
