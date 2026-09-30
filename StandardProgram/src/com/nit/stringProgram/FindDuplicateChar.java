@@ -12,13 +12,14 @@ public class FindDuplicateChar {
 		System.out.print("Duplicate characters = ");
 		for (int i = 0; i <= s.length() - 1; i++) {
 			char ch = s.charAt(i);
-			
+
 			if (!result.contains("" + ch)) {
 				result += ch;
 			} 
 			else {
-				System.out.print(ch+" ");
+				System.out.print(ch + " ");
 			}
+			eas
 		}
 	}
 }
