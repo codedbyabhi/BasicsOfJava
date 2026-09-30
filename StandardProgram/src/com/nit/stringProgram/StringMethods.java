@@ -25,6 +25,11 @@ public class StringMethods {
 		sb.ensureCapacity(50);
 		System.out.println(sb.append("ABCCC"));
 	//	sb.getChars(1, 3, "a", 4);
+	
+	{
+			
+			
+		}
 	}
-}
-                       
+	
+}        
