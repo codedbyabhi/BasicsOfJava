@@ -19,7 +19,7 @@ public class FindDuplicateChar {
 			else {
 				System.out.print(ch + " ");
 			}
-			eas
+			
 		}
 	}
 }
