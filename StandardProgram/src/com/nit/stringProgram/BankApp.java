@@ -10,13 +10,13 @@ public class BankApp {
         String accountHolder1=sc.nextLine();
         double balance1 = sc.nextDouble();
         sc.nextLine();
-        
+
         String accountNumber2=sc.nextLine();
         String accountType2=sc.nextLine();
         String accountHolder2=sc.nextLine();
         double balance2 = sc.nextDouble();
         sc.nextLine();
-        
+
         if(balance1<0||0>balance2){
             System.out.println("Error: Balance must be non-negative");
             return;
