@@ -18,8 +18,7 @@ public class SocialMediaApp {
         }
         EngagementPost ep = new EngagementPost(userName,company,postId,contentType,likes,comments,shares);
         System.out.println(ep);
-
-        
+ 
     }
 }
 class UserProfile{
