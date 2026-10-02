@@ -1,4 +1,4 @@
-package com.nit.singletonClass;
+package com.nit.typesOfClasses;
 
 public class SingletonClassDemo {
 	public static void main(String[] args) {
@@ -32,7 +32,4 @@ class Student {
 	public String toString() {
 		return "Student [i=" + i + ", j=" + j + "]";
 	}
-
-	
-
 }
