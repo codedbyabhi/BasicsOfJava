@@ -3,12 +3,10 @@ package com.nit.typesOfClasses;
 public class InnerClassesDemo {
 	public static void main(String[] args) {
 		Car.Engine eng = new Car().new Engine(200, 15);
-		Car cr = new Car("i20",eng);
+		Car cr = new Car("BMW M5",eng);
 		System.out.println(cr);
 	}
-
 }
-
 class Car {
 	public String name;
 	public Engine engine;
