@@ -1,3 +1,62 @@
+/*You are developing an International Art Gallery Management System.
+
+The system manages an array of ArtPiece objects.
+Each ArtPiece has a nested static class for Artist details.
+The system must provide an iterator to traverse the array of ArtPiece objects and display art and artist details sequentially.
+
+Class Details
+
+Create a class named ArtPiece.
+
+Data Members
+String artId // unique art identifier
+String artName // name of the artwork
+double price // price of the artwork
+
+Constructor
+ArtPiece(String artId, String artName, double price)
+Initializes all fields.
+
+Nested Class
+
+Create a static nested class named Artist inside ArtPiece.
+
+Data Members
+String artistName // name of the artist
+String country // artist’s country
+
+Constructor
+Artist(String artistName, String country)
+Initializes all fields.
+
+Method in ArtPiece
+printArtDetails()
+
+Logic
+Print art ID, name, price.
+Print artist name and country.
+
+Iterator Design:
+Inside ArtPiece, create a static nested class ArtIterator.
+
+Data Members
+ArtPiece[] artArray
+int index
+
+Constructor
+ArtIterator(ArtPiece[] artArray)
+Initializes the array and index = 0
+
+Methods
+boolean hasNext() → returns true/false
+ArtPiece next() → returns element
+
+Main Class Details
+Create a class named GalleryApp.
+Create an array of two ArtPiece objects.
+Use Scanner to read art and artist details for both objects.
+Create ArtIterator object to traverse the array.
+Use iterator to print details of all art pieces using printArtDetails().*/
 package com.nit.typesOfClasses;
 
 import java.util.*;
