@@ -1,16 +1,31 @@
-package com.nit.objectMethods;
-
-public class LibraryApp {
-
-}
 import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        
-    }
-}
+public class LibraryApp {
+    public static void main(String [] args)throws CloneNotSupportedException{
+        Scanner sc = new Scanner(System.in);
 
+        String bookId = sc.nextLine();
+        String title = sc.nextLine();
+        String author = sc.nextLine();
+        double price = sc.nextDouble();
+
+        if(price<0){
+            System.out.println("Error: Invalid book details");
+            return;
+        }
+        Book b = new Book(bookId, title, author, price);
+        Book clone = b.clone();
+
+        clone.price +=50;
+        
+        System.out.print("Original Book: ");
+        System.out.println(b.bookId+" "+b.title+" "+b.author+" "+b.price);
+        System.out.print("Cloned Book: ");
+        System.out.println(clone.bookId+" "+clone.title+" "+clone.author+" "+clone.price);
+
+    }
+
+}
 class Book implements Cloneable{
     public String bookId;
     public String title;
@@ -26,6 +41,6 @@ class Book implements Cloneable{
     }
 
     public Book clone() throws CloneNotSupportedException{
-        return Book
+        return (Book) super.clone();
     }
 }
