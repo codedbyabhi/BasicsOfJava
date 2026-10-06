@@ -1,3 +1,39 @@
+/*You are developing a Game Character Profile System for an international gaming platform.
+
+During gameplay, players can create temporary copies of their character profiles for simulations such as training mode or battle prediction.
+These copies must be independent of the original object, so changes to the clone should not affect the original character.
+
+This requires implementing object cloning using the clone() method.
+
+Class Details
+
+Create a class named GameCharacter that implements Cloneable.
+
+Data Members
+String characterId // unique character identifier
+String playerName // name of the player
+int level // current character level
+double health // current health points
+
+Constructor
+GameCharacter(String characterId, String playerName, int level, double health)
+Initializes all fields.
+
+Override clone() from Object class
+
+Logic
+Call super.clone() to create a shallow copy.
+Return the cloned GameCharacter object.
+
+Main Class Details
+
+Create a class named GameApp.
+
+Use Scanner to read details of one character.
+Create the original GameCharacter object.
+Clone the object using clone().
+Modify the cloned character’s level and health.
+Print details of both original and cloned objects to show independence.*/
 package com.nit.objectMethods;
 import java.util.*;
 
