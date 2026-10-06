@@ -27,7 +27,7 @@ Else → "Fail"
 
 Main Class Details
 
-Create a class named ExamApp.
+Create a class named ExamApp.....
 
 Inside main:
 Use Scanner to read:
