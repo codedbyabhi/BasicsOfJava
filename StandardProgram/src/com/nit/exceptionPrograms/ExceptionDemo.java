@@ -10,7 +10,7 @@ public class ExceptionDemo {
 			System.out.println("Exception Handled.");
 		}
 		finally {
-			System.out.println("Finally always execute when try bllock exe");
+			System.out.println("Finally always execute when try bllock exect");
 			
 		}
 	}
