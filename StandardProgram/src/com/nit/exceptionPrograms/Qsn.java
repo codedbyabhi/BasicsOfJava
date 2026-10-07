@@ -42,6 +42,17 @@ class BankAccount {
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}
-	
+
+	public void withdraw(double amount) {
+		if (amount <= 0) {
+			throw new InsufficientBalanceException("Invalid withdrawal amount");
+		}
+		if (amount > getBalance()) {
+			throw new InsufficientBalanceException("Insufficient balance");
+		} else {
+			balance -= amount;
+			System.out.println("Withdraw Successfull");
+		}
+	}
 
 }
