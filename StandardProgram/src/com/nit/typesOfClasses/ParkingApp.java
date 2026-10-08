@@ -41,7 +41,6 @@ public class ParkingApp {
         int totalSlots =  ss.nextInt();
         int occupiedSlots = ss.nextInt();
 
-        ParkingLot
         
     }
 }

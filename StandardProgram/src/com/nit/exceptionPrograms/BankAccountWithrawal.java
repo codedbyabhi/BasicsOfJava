@@ -2,8 +2,8 @@ package com.nit.exceptionPrograms;
 
 import java.util.Scanner;
 
-public class Qsn {
-	public static void main(String[] args) throws IncompatibleClassChangeError {
+public class BankAccountWithrawal {
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter AccHolder name, initial balance and withdrawal amount : ");
 		String accountName = sc.nextLine();
