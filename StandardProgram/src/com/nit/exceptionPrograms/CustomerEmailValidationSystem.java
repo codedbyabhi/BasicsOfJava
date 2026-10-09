@@ -6,7 +6,18 @@ public class CustomerEmailValidationSystem {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
+		System.out.println("Enter Customer Name, email");
+		String customerName = sc.nextLine();
+		String email = sc.nextLine();
+
+		Customer c = new Customer(customerName, email);
+
+		try {
+
+			c.registerCustomer();
+		} catch (InvalidEmailException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 }
 
@@ -42,27 +53,27 @@ class Customer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	public void registerCustomer() throws InvalidEmailException{
-		
-		if(!email.contains("@")) {
+
+	public void registerCustomer() throws InvalidEmailException {
+
+		if (!email.contains("@")) {
 			throw new InvalidEmailException("Email must contain @ symbol");
 		}
-		if(email.indexOf("@") != email.lastIndexOf("@")) {
+		if (email.indexOf("@") != email.lastIndexOf("@")) {
 			throw new InvalidEmailException("Email must contain only one @ symbol");
 		}
 		int at = email.indexOf("@");
-		if(at == 0||at==email.length()-1) {
+		if (at == 0 || at == email.length() - 1) {
 			throw new InvalidEmailException("Invalid email format");
 		}
-		int dot=email.indexOf(".",at);
-		if(dot==-1) {
+		int dot = email.indexOf(".", at);
+		if (dot == -1) {
 			throw new InvalidEmailException("Email must contain a dot after @.");
 		}
-		if(dot==at+1||dot==email.length()-1) {
+		if (dot == at + 1 || dot == email.length() - 1) {
 			throw new InvalidEmailException("Invalid email format");
 		}
-		
+
 		System.out.println("Cutomer registration successful");
 	}
 
