@@ -1,7 +1,13 @@
 package com.nit.exceptionPrograms;
 
+import java.util.Scanner;
+
 public class CustomerEmailValidationSystem {
 
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+	}
 }
 
 class InvalidEmailException extends Exception {
