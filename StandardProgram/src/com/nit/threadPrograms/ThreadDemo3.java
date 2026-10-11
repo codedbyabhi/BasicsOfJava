@@ -6,7 +6,6 @@ public class ThreadDemo3 {
 		MyRunnable3 r1 = new MyRunnable3(Thread.currentThread());
 		Thread t1 = new Thread(r1);
 		t1.start();
-
 		for (int i = 0; i <= 100; i++) {
 			System.out.println(i);
 		}
