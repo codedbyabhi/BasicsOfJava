@@ -13,7 +13,7 @@ public class NotifyDemo{
 		}
 
 	}
-}Object 
+}
 class MyThread3 extends Thread {
 
 	public void run() {

@@ -1,62 +1,62 @@
 package com.nit.stringProgram;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class CheckAnagramString {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the 1st String : ");
-		String s1 = sc.nextLine();
-		System.out.println("Enter the 2nd iString : ");
-		String s2 = sc.nextLine();
+	public static void main(String[] args) throws InterruptedException {
+		Employee emp = new Employee();
+		ThreadX x = new ThreadX(emp);
+		ThreadY y = new ThreadY(emp);
+		x.start();
+		y.start();
+	}
+}
 
-		char[] a = new char[s1.length()];
-		for (int i = 0; i <=s1.length() - 1; i++) {
+class Employee {
+	public synchronized void demo() {
+		try {
+			for (int i = 1; i <= 5; i++) {
+				System.out.println(Thread.currentThread().getName() + " : " + i);
+				Thread.sleep(0);
 
-			a[i] = s1.charAt(i);
-		}
-
-		char[] b = new char[s2.length()];
-		for (int i = 0; i <=s2.length() - 1; i++) {
-
-			b[i] = s2.charAt(i);
-		}
-		for (int cycle = 1; cycle <= a.length - 1; cycle++) {
-			for (int i = 0; i < s1.length() - 2; i++) {
-				if (a[i + 1] < a[i]) {
-					char temp = a[i];
-					a[i] = a[i + 1];
-					a[i + 1] = temp;
-				}
 			}
+		} catch (InterruptedException e) {
+			System.out.println(e);
 		}
-		for (int cycle = 1; cycle <= b.length - 1; cycle++) {
-			for (int i = 0; i < s2.length() - 2; i++) {
-				if (b[i + 1] < b[i]) {
-					char temp = b[i];
-					b[i] = b[i + 1];
-					b[i + 1] = temp;
-				}
+	}
+
+	public synchronized void fast() {
+		try {
+			for (int i = 101; i <= 105; i++) {
+				System.out.println(Thread.currentThread().getName() + " : " + i);
+				Thread.sleep(0);
 			}
+		} catch (InterruptedException e) {
+			System.out.println(e);
 		}
+	}
+}
 
-		String result1 = "";
-		for (int i = 0; i < s1.length() - 1; i++) {
-			result1 += a[i];
-		}
+class ThreadX extends Thread {
+	public Employee emp;
 
-		String result2 = "";
-		for (int i = 0; i < s2.length() - 1; i++) {
-			result2 += b[i];
-		}
-
-		if (result1.equals(result2)) {
-			System.out.println("Anagram");
-		} else {
-			System.out.println("Not Anagram");
-		}
+	public ThreadX(Employee emp) {
+		this.emp = emp;
 
 	}
 
+	public void run() {
+		emp.demo();
+	}
+}
+
+class ThreadY extends Thread {
+	public Employee emp;
+
+	public ThreadY(Employee emp) {
+		this.emp = emp;
+
+	}
+
+	public void run() {
+		emp.fast();
+	}
 }
