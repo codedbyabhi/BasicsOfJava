@@ -5,8 +5,12 @@ import java.util.concurrent.Executors;
 
 public class ThreadPoolDemo {
 	public static void main(String[] args) {
-
-		ExecutorService service = Executors.newFixedThreadPool(3);
+		
+		//ExecutorService service = Executors.newCachedThreadPool();
+		//ExecutorService service = Executors.newFixedThreadPool(3);
+		//ExecutorService service = Executors.newScheduledThreadPool(2);
+		ExecutorService service = Executors.newSingleThreadExecutor();
+		
 		for(int i =1; i<=6;i++) {
 			service.execute(new Task());
 		}
@@ -16,7 +20,7 @@ public class ThreadPoolDemo {
 
 class Task implements Runnable {
 
-	public void run() {
+	public void run(){
 		System.out.println(Thread.currentThread().getName() + " is executeint...!!!");
 	}
 }
