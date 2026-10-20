@@ -1,3 +1,4 @@
+//This is the Perfect example of Deadlock
 package com.nit.threadPrograms;
 
 public class InterruptThreadDemo2 {
