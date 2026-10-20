@@ -1,4 +1,4 @@
-package com.nit.threadPrograms;
+ package com.nit.threadPrograms;
 
 public class ThreadDemo {
 	public static void main(String[] args) throws InterruptedException {
