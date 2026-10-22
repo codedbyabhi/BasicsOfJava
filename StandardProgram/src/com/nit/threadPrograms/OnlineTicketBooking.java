@@ -33,8 +33,7 @@ class TicketBooking {
 		if (numberOfTickets <= availableTickets) {
 			availableTickets -= numberOfTickets;
 
-			System.out
-					.println(Thread.currentThread().getName() + " booked " + numberOfTickets + " tickets succesfully.");
+			System.out.println(Thread.currentThread().getName() + " booked " + numberOfTickets + " tickets succesfully.");
 
 		} else {
 			System.out.println(
