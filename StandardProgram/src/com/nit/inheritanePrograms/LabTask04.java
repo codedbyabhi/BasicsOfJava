@@ -11,7 +11,7 @@ public class LabTask04{
         CreditCard card = new CreditCard(income, creditScore);
         card.calculateLimit();
 
-        sc.close()
+        sc.close();
     }
 }
 class Customer {
