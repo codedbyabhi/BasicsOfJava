@@ -26,5 +26,4 @@ public class UnaryOperatorDemo {
 			System.out.println(e + " -> " + f.apply(e));
 		}
 	}
-
 }
