@@ -15,7 +15,7 @@ public class DeSerializationDemo {
         FileInputStream fis = new FileInputStream(f);
         ObjectInputStream ois = new ObjectInputStream(fis);
 
-        Dog d2 = (Dog) ois.readObject();
+        Dog1 d2 = (Dog1) ois.readObject();
 
         ois.close();
 
@@ -23,7 +23,7 @@ public class DeSerializationDemo {
     }
 }
 
-class Dog implements Serializable {
+class Dog1 implements Serializable {
     public int i = 10;
     public int j = 20;
 }
